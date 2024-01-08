@@ -34,7 +34,7 @@ if st.button('Predict Price'):
         ips  = 1
     else:
         ips  = 0
-    
+
     X_res = int(resolution.split('x')[0])
     Y_res = int(resolution.split('x')[1])
 
@@ -46,4 +46,4 @@ if st.button('Predict Price'):
 
     prediction =int(np.exp(pipe.predict(query)[0]))
 
-    st.titel("Prediction price of the laptop is around" + str(prediction))
+    st.title("Prediction price of the laptop is around" + str(prediction))
